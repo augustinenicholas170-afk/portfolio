@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+</head>
+<style>
+    body{
+        background-color: rgb(43, 5, 78);
+        margin: 0px;
+    }
+    .main1{
+        position: relative;
+        background-color: rgb(0, 0, 0,0.5);
+        border: 2px solid;
+        color: rgb(202, 186, 13);
+        border-radius: 20px;
+        width: 400px;
+        height: 400px;
+        top: 100px;
+        left: 200px;
+        align-content: center;
+        transition: 0.2s,ease-in-out;
+        
+    }
+    
+    #in1{
+        padding: 20px;
+        border-radius: 10px;
+        margin-left: 50%;
+       
+    }
+    #in2{
+        
+        padding: 20px;
+        border-radius: 10px;
+        margin-left: 50%;
+
+    } 
+    #in3{
+        padding: 20px;
+        border-radius: 10px;
+        margin-left: 50%;
+
+    } 
+    #b1{
+        background-color:  rgb(202, 186, 13);
+        margin-left: 50%;
+        border-radius: 10px;
+        width: 200PX;
+    }
+    #in1:hover{
+        
+        transform: scale(1.1);
+    }
+     #in2:hover{
+        
+        transform: scale(1.1);
+    } #in3:hover{
+        
+        transform: scale(1.1);
+    }
+    #b1:hover{
+        transform: scale(0.9);
+    }
+    #h1{
+        margin-left: 25%;
+    }
+    #s1{
+        padding: 20px;
+        border-radius: 10px;
+        margin-left: 50%;
+        width: 209px;
+    }
+    .main2{
+      position: relative;
+        background-color: rgb(0, 0, 0,0.5);
+        border: 2px solid;
+        color: rgb(202, 186, 13);
+        border-radius: 20px;
+        width: 400px;
+        height: 400px;
+        top: -360px;
+        left: 450px;
+        align-content: center;
+    }
+    #h3-1{
+        margin-left: 40%;
+        margin-top: 20px;
+    }
+    #img1{
+        margin-left: 20%;
+
+    }
+     #h3-2{
+        margin-left: 40%;
+    }
+     #h3-3{
+        margin-left: 37%;
+    }
+    #img1{
+        width: 200px;
+        height: 200px;
+    }
+  
+</style>
+<body>
+    <div class="main1">
+        <table>
+            <h1 id="h1">SUBMIT HERE</h1>
+            <tr>
+                <td><input type="text" placeholder="ENTER YOUR NAME" id="in1"></td>
+            </tr>
+             <tr>
+                <td><input type="text" placeholder="ENTER YOUR IMAGE URL" id="in2"></td>
+            </tr>
+             <tr>
+                <td><input type="text" placeholder="ENTER YOUR BIO" id="in3"></td>
+            </tr>
+            <tr>
+               
+                <td><button id="b1" onclick="update()"><b>SUBMIT HERE</b></button></td>
+            </tr>
+        </table>
+        <div class="main2">
+            <h3 id="h3-1"> NAME</h3>
+            <img id="img1" src="https://th.bing.com/th/id/OIP.4OvvUCPSUCMZ5vDhyCeEbQHaHw?w=178&h=186&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3">
+            <h3 id="h3-2">BIO</h3>
+             
+        </div>
+        <script>
+            function update(){
+                let a=document.getElementById("in1").value;
+                let b=document.getElementById("in2").value;
+                let c=document.getElementById("in3").value;
+                let d=document.getElementById("s1").value;
+                document.getElementById("h3-1").innerHTML=a;
+                document.getElementById("img1").src=b;
+                document.getElementById("h3-2").innerHTML=c;
+                
+
+
+            }
+        </script>
+        
+
+
+    </div>
+</body>
+</html>

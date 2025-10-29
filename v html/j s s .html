@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio website</title>
+</head>
+<style>
+    body{
+        margin: 0px;
+    }
+.main1{
+    position: relative; 
+}
+#img1{
+     width: 100vw;
+    height: 100vh;
+}
+.main2{
+    position: absolute;
+    top: 300px;
+    left: 100px;
+    color: aliceblue;
+    text-align: justify;
+   
+}
+.main3{
+    background-color: rgb(221, 221, 14,0.2);
+    position: absolute;
+    width: 100vw;
+    height: 100px;
+    top: 0px;
+    
+   
+}
+#h4{
+    color: aliceblue;
+    font-size: xx-large;
+    text-align: center;
+   
+}
+.main4{
+    position: absolute;
+    top: 150px;
+    right: 150px;
+    
+    
+}
+#img2{
+  width: 500px;
+    height: 550px;
+    border-radius: 100px; 
+}
+#img2:hover{
+    transform: scale(1.1);
+}
+.main2,#b1{
+    border-radius: 5px;
+    
+}
+#b1:hover{
+    transform: scale(0.9);
+    transition: 0.2s ease-in-out;
+}
+.main5{
+    position: absolute;
+    right: 70px;
+    top: 70px;
+    text-align: justify;
+    font-size: small;
+    font-weight: bold;
+    color: aliceblue;
+
+}
+#t1:hover{
+    transform: scale(0.8);
+}
+#t2:hover{
+    transform: scale(0.8);
+}
+#t3:hover{
+    transform: scale(0.8);
+}
+#t4:hover{
+    transform: scale(0.8);
+}
+#main6{
+ position: absolute;
+top: 150px;
+left: 100px;
+display: none;
+}
+#img3{
+    width: 100px;
+    height: 100px;
+     border-radius: 10px;
+       
+}
+
+</style>
+<body>
+    <div class="main1"></div>
+    <img id="img1" src="https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg">
+    <div class="main2">
+        <h1 id="a1"> Hi,There</h1>
+        <h1 id="a2">This is <samp style="color: yellow;">Augustine</samp></h1>
+        <h1 id="a3">software developer</h1>
+         <button id="b1" style="background-color: rgb(255, 255, 0,0.5);"><b>ABOUT</b></button></div>
+         <div class="main3">
+            <h4 id="h4"><b>WELCOME TO MY PORTFOLIO</b></h4>
+         </div>
+         
+         <div class="main4">
+            <img id="img2" src="C:\Users\nicho\OneDrive\Desktop\v html\nffp\web img aug.jpg" alt="">
+         </div>
+         
+    <div id="main6">
+        <img id="img3" src="C:\Users\nicho\OneDrive\Desktop\v html\nffp\web img aug.jpg" >
+    </div>
+
+    <div class="main5">
+         <table>
+        <tr>
+            <td id="t1">HOME </td><td id="t2">EDUCATION </td><td id="t3">TALENT </td><td id="t4">SKILLS</td>
+        </tr>
+    </table>
+    
+    </div>
+    </div>
+    
+    <script>
+        document. getElementById("b1").onclick=function(){
+            document.getElementById("a1").innerHTML="I’m Augustine, a gentleman and an enthusiastic student of Bishop Heber College. I have a strong passion for web development and enjoy creating creative and functional designs using HTML, JavaScript, and CSS. I always love learning new things and improving my skills every day. Along with my technical knowledge, I’m also confident in my communication skills, which help me connect and collaborate well with others. Thanks for visiting my website and getting to know a bit about me! 😊"
+           document.getElementById("img2").style.display="none";
+           document.getElementById("a2").style.display="none";
+           document.getElementById("a3").style.display="none";
+           document.getElementById("main6").style.display="block";
+           document.getElementById("a1").style.color="pink";
+        }
+
+    </script>
+</body>
+</html>

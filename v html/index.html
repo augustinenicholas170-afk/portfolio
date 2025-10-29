@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>www.augustine portfolio.com</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.header {
+  background: #111;
+  position: sticky;
+  top: 0;
+  padding: 15px 0;
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+  z-index: 10;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ccc;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+
+/* Sections */
+.section {
+  padding: 80px 10%;
+  border-bottom: 1px solid #333;
+}
+
+.section h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  border-left: 4px solid #fff;
+  padding-left: 10px;
+  text-transform: uppercase;
+}
+
+/* About Section */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-img img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  transition: 0.3s;
+}
+
+.about-img img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+}
+
+.about-text {
+  max-width: 600px;
+}
+
+/* Skills */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skills-list li {
+  background: #111;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.skills-list li:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 25px;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #000;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #fff;
+}
+
+/* Contact */
+.contact a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contact a:hover {
+  color: #ccc;
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: #999;
+  font-size: 14px;
+}
+
+</style>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">AUGUSTINE&nbsp;P</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="section about-section">
+    <div class="about-container">
+      <div class="about-img">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNzy_ScT3PlFiFzkx7qc725gE3HG6QEouMmw35PSvWbSZ_dcpU_f3BS36r_JltOmIJSfKDN8A-JRxcZQJmaN-fezfUGqGVQL6GzmfJNAxj1YPoBMMvk3q-FrKkO4h30hndXJZrU5OurT9-EpSHJCG9S_yxDKsf_1-v8Td5Ib7YZI2LwWJvcq9Two66uoS9/w245-h320/WhatsApp%20Image%202025-09-23%20at%2020.20.18_f30e0e51.jpg" alt="">
+      </div>
+      <div class="about-text">
+        <h2>Profile Summary</h2>
+        <p>
+          Energetic and dedicated undergraduate from the Department of Commerce,
+          Bishop Heber College. Strong academic background with hands-on project
+          experience. Skilled in communication, teamwork, and leadership. Keen
+          to contribute effectively to organizational success through innovative
+          solutions.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="section">
+    <h2>Education</h2>
+    <div class="timeline">
+      <div class="edu-item">
+        <h3>B.Com (CA) — Bishop Heber College</h3>
+        <p>2023–2026 | CGPA 7.2</p>
+      </div>
+      <div class="edu-item">
+        <h3>HSC — K.A.P. Visvanathan Hr. Sec. School</h3>
+        <p>2021–2022 | Score 89%</p>
+      </div>
+      <div class="edu-item">
+        <h3>SSLC — St. John’s Vestry Anglo Indian Hr. Sec. School</h3>
+        <p>2019–2020 | Score 56%</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <h2>Technical Skills</h2>
+    <ul class="skills-list">
+      <li>MS Office</li>
+      <li>Artificial Intelligence Tools</li>
+      <li>n8n AI Automation</li>
+      <li>Web Development</li>
+      <li>HTML • CSS • JavaScript</li>
+      <li>Node.js • Python</li>
+    </ul>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <p>Empowering Women Through Self-Help Groups — UG 4th Semester Project.</p>
+    <a
+      class="btn"
+      href="https://drive.google.com/drive/folders/1pCYBIKGsj4-4XhqoMtph4A2DGSHY_Vgo?usp=sharing"
+      target="_blank"
+      >View Projects</a
+    >
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section">
+    <h2>Internships & Experience</h2>
+    <ul>
+      <li>Digital Marketer — Infinite Designing</li>
+      <li>Digital Marketer — RC Construction</li>
+      <li>Public Relation Officer — Bishop Heber College</li>
+      <li>Executive Member — Department of Commerce</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <h2>Contact</h2>
+    <p>
+      Email:
+      <a href="mailto:augustinenicholas170@gmail.com"
+        >augustinenicholas170@gmail.com</a
+      >
+    </p>
+    <p>
+      Mobile:
+      <a href="tel:+916379752756">+91 63797 52756</a>
+    </p>
+    <p>
+      LinkedIn:
+      <a
+        href="https://www.linkedin.com/in/augustine-paulraj-51a310370"
+        target="_blank"
+        >View Profile</a
+      >
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 Augustine P | Designed with ❤️ in HTML, CSS & JS</p>
+  </footer>
+  <script>
+    // Smooth scrolling
+document.querySelectorAll(".nav-links a").forEach(link => {
+  link.addEventListener("click", e => {
+    e.preventDefault();
+    document
+      .querySelector(link.getAttribute("href"))
+      .scrollIntoView({ behavior: "smooth" });
+  });
+});
+
+// Glow hover on all buttons
+document.querySelectorAll(".btn").forEach(btn => {
+  btn.addEventListener("mouseenter", () => (btn.style.boxShadow = "0 0 15px white"));
+  btn.addEventListener("mouseleave", () => (btn.style.boxShadow = "none"));
+});
+
+  </script>
+</body>
+</html>

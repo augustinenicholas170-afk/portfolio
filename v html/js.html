@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akash Karthikeyan | Web Developer Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(120deg, #0077b6, #48cae4);
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+    }
+    nav {
+      background-color: #023e8a;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #90e0ef;
+    }
+    section {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      color: #0077b6;
+      margin-bottom: 20px;
+      border-left: 4px solid #0077b6;
+      padding-left: 10px;
+    }
+    .about, .education, .skills, .projects, .contact {
+      margin-bottom: 60px;
+    }
+    .about p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    .education-item, .project-item {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+    }
+    .skill-box {
+      background: white;
+      padding: 15px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+      transition: 0.3s;
+    }
+    .skill-box:hover {
+      transform: translateY(-5px);
+      background-color: #e0f7fa;
+    }
+    .contact-info {
+      line-height: 1.8;
+      font-size: 1.05rem;
+    }
+    footer {
+      background-color: #023e8a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    button {
+      background: #0077b6;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #0096c7;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Akash Karthikeyan</h1>
+    <p>Web Developer | B.Com (CA) | Bishop Heber College</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I am a results-oriented B.Com Computer Applications student with a 7.76 CGPA, specializing in web development and software technologies.
+      A dedicated and adaptable team player with a passion for learning and applying new technologies to solve real-world problems.
+    </p>
+  </section>
+
+  <section id="education" class="education">
+    <h2>Education</h2>
+    <div class="education-item">
+      <h3>B.Com (Computer Applications)</h3>
+      <p><strong>Bishop Heber College, Tiruchirappalli (2023–2026)</strong></p>
+      <p>CGPA: 7.76</p>
+    </div>
+    <div class="education-item">
+      <h3>12th Grade – Commerce Stream</h3>
+      <p><strong>Chinmaya Vidyalaya Matric. Hr. Sec. School</strong> | 2022–2023 | 88.33%</p>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Technical & Soft Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-box">HTML</div>
+      <div class="skill-box">CSS</div>
+      <div class="skill-box">JavaScript</div>
+      <div class="skill-box">Python</div>
+      <div class="skill-box">Git & GitHub</div>
+      <div class="skill-box">VS Code</div>
+      <div class="skill-box">Excel</div>
+      <div class="skill-box">Communication</div>
+      <div class="skill-box">Teamwork</div>
+      <div class="skill-box">Time Management</div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-item">
+      <h3>Home Server using Ubuntu</h3>
+      <p>
+        Set up a home server accessible over WLAN for file sharing and management.  
+        <strong>Technologies:</strong> Git, GitHub, Ubuntu Server OS
+      </p>
+    </div>
+    <div class="project-item">
+      <h3>AI Agent using n8n</h3>
+      <p>
+        Built an AI automation agent with n8n to provide real-time weather updates using Docker for local hosting.  
+        <strong>Technologies:</strong> Docker, n8n
+      </p>
+    </div>
+    <button onclick="viewProjects()">View My Projects</button>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <div class="contact-info">
+      <p><strong>Email:</strong> <a href="mailto:akashkarthikeyan43@gmail.com">akashkarthikeyan43@gmail.com</a></p>
+      <p><strong>Phone:</strong> 9786146246</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/akashkarthikeyan/" target="_blank">linkedin.com/in/akashkarthikeyan</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/akash-karthikeyan-linux" target="_blank">github.com/akash-karthikeyan-linux</a></p>
+      <p><strong>Location:</strong> Tiruchirappalli, Tamil Nadu</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Akash Karthikeyan | Designed by Augustine</p>
+  </footer>
+
+  <script>
+    function viewProjects() {
+      window.open("https://drive.google.com/drive/u/1/folders/1DP1G_BzgX2n9rXgDLrrzkDwfOXnqlFPO", "_blank");
+    }
+  </script>
+</body>
+</html>

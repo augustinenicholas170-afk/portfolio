@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+   <table>
+    <tr>
+        <td><h5 id="h1">Rohit sharma</h5></td>
+        <td><p id="p1">Run 0</p></td>
+        
+    </tr>
+    <tr>
+        <td><h5 id="h2">Seve smith</h5></td>
+        <td><p id="p2">Run 0</p></td>
+        
+    </tr>
+    <tr>
+        <td><button id="b1" style="background-color: blue;color: black;">Run Rohit</button></td>
+        <td><button  id="b2" style=" background-color: yellow; color: black;">Run Smith</button></td>
+        
+    </tr>
+   </table>
+   <script>
+    let r1=0;
+    let r2=0;
+    let a="Rohit sharma"
+    let b="Steve smith"
+        document.getElementById("b1").onclick=function(){
+            r1=r1+1;
+            document.getElementById("p1").innerHTML= r1
+        updateScore();
+        }
+        document.getElementById('b2').onclick=function(){
+            r2=r2+1
+            document.getElementById('p2').innerHTML=r2
+            updateScore()
+        }
+        function updateScore(){
+            if(r2>r1){
+                document.getElementById('h1').innerHTML=b
+                document.getElementById("p1").innerHTML=r2
+                document.getElementById('h2').innerHTML=a
+                document.getElementById("p2").innerHTML=r1
+            }
+            else{
+                document.getElementById('h1').innerHTML=a
+                document.getElementById("p1").innerHTML=r1
+                document.getElementById('h2').innerHTML=b
+                document.getElementById("p2").innerHTML=r2
+            }
+        }
+   </script>
+</body>
+</html>

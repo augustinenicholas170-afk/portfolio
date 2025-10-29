@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#src{
+        width: 300px;
+        height: 300px;
+    }
+</style>
+<body>
+    <div>
+        <input type="text" placeholder="ENTHER THE NAME" id="name">   
+        <input type="text" placeholder="SELECT PROFILE URL" id="img1">
+        <input type="text"placeholder="BIO" id="bio">
+        <button onclick="update()"><b>submit</b></button>
+    </div>
+    <div>
+        <h1 id="h1">NAME</h1>
+        <img src="C:\Users\nicho\OneDrive\Desktop\v html\nffp\web img aug.jpg" id="src">
+        <h1 id="h2">bio</h1>
+    </div>
+    <script>
+        function update(){
+           let Name= document.getElementById("name").value;
+           let img= document.getElementById("img1").value;
+           let Bio= document.getElementById("bio").value;
+           document.getElementById("h1").innerHTML=Name;
+           document.getElementById("src").src=img;
+           document.getElementById("h2").innerHTML=Bio;
+        }
+    </script>
+</body>
+</html>

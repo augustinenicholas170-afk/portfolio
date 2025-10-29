@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+</style>
+<body>
+    <table>
+        <form onsubmit=" return submitForm()">
+            <tr>
+                 <td><label for="na">Name</label></td>
+                 <td><input type="text" id="na" placeholder="Enter name"></td>
+                 <td><span id="s1" style="color: rgb(205, 25, 25);"></span></td>
+            </tr>
+             <tr>
+                 <td><label for="nu">Number</label></td>
+                 <td><input type="text" name="" id="nu" placeholder="Enter Number"></td>
+                 <td><span style="color: rgb(205, 25, 25);" id="s2"></span></td>
+            </tr>
+             <tr>
+                 <td> <label for="em">e-mail</label></td>
+                 <td> <input type="text" name="" id="em" placeholder="Enter E-mail"></td>
+                 <td><span style="color: rgb(205, 25, 25);" id="s3"></span></td>
+            </tr>
+            <tr>
+                <td> <input type="submit"></td>
+            </tr> 
+            
+    </form>
+    </table>
+    <script>
+        function submitForm(){
+            let name= document.getElementById("na").value;
+            let number=document.getElementById("nu").value;
+            let mail=document.getElementById("em").value;
+
+            if (name == ""){
+                document.getElementById("s1").innerHTML= "Kindly Enter Name";
+                return false;
+            }
+            else{
+                document.getElementById("s1").innerHTML= "";
+            }
+            if( number == ""){
+                document.getElementById("s2").innerHTML="Kindly Enter Number";
+                return false;
+            }
+            else if(isNaN(number)){
+                 document.getElementById("s2").innerHTML="kindly Enter Number Type"
+                 return false;
+            }
+            else{
+                 document.getElementById("s2").innerHTML="";
+            }
+             if( mail == ""){
+                document.getElementById("s3").innerHTML="kindly Enter E-mail";
+                valid=false;
+
+                return false;
+            }
+           
+            
+            else{
+                document.getElementById("s3").innerHTML="";
+            }
+            
+             
+            return true;
+
+
+        }
+
+    </script>
+    
+</body>
+</html>
